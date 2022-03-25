@@ -17,7 +17,7 @@ const ExpensesChart = (props) => {
     { label: 'Nov', value: 0 },
     { label: 'Dec', value: 0 },
   ];
-
+    // props.expenses es un array filtrado por año de objetos(gastos del mismo año)
   
   for (const expense of props.expenses) {
     const expenseMonth = expense.date.getMonth(); // obtiene el valor del mes de cada expense
